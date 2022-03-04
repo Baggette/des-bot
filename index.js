@@ -13,7 +13,7 @@ client.on('ready', () => {
     client.user.setPresence({ activities: [{ name: 'Liberal quotes' }], status: 'idle' });
 });
 client.on('messageCreate', (message) => {
-    if(message.content.startsWith(prefix)){
+    if(message.content.toLowerCase().startsWith(prefix)){
         let liberal =[
             "yes",
             "no",
