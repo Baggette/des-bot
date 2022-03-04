@@ -25,7 +25,11 @@ client.on('messageCreate', (message) => {
             "try again later <:troll:900546362712666193>",
             "uno reverse",
             "skill issue",
-            "I am a extremely vocal leftist in high school"
+            "I am a extremely vocal leftist in high school",
+            "I don't care",
+            "you suck",
+            "hello fellow citizen",
+            "let's play super smash flash"
         ]
         message.channel.send(`${liberal[Math.floor(Math.random() * liberal.length)]}`)
     }
