@@ -29,7 +29,8 @@ client.on('messageCreate', (message) => {
             "I don't care",
             "you suck",
             "hello fellow citizen",
-            "let's play super smash flash"
+            "let's play super smash flash",
+            "Mitochondria are the powerhouses of the cell"
         ]
         message.channel.send(`${liberal[Math.floor(Math.random() * liberal.length)]}`)
     }
