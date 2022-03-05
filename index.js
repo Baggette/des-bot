@@ -2,16 +2,19 @@ const { Client, Intents, Message } = require('discord.js');
 const dotenv = require('dotenv');
 dotenv.config();
 const prefix = "des"
+
 const client = new Client({
     intents: [
         Intents.FLAGS.GUILDS,
         Intents.FLAGS.GUILD_MESSAGES
     ]
 });
+
 client.on('ready', () => {
     console.log('des is online')
-    client.user.setPresence({ activities: [{ name: 'Liberal quotes' }], status: 'idle' });
+    client.user.setPresence({ activities: [{ name: "Super Smash Flash" }], status: 'idle' });
 });
+
 client.on('messageCreate', (message) => {
     if(message.content.toLowerCase().startsWith(prefix)){
         let liberal =[
@@ -30,9 +33,11 @@ client.on('messageCreate', (message) => {
             "you suck",
             "hello fellow citizen",
             "let's play super smash flash",
-            "Mitochondria are the powerhouses of the cell"
+            "Mitochondria are the powerhouses of the cell",
+            `I am currently in ${client.guilds.cache.size} servers`
         ]
         message.channel.send(`${liberal[Math.floor(Math.random() * liberal.length)]}`)
     }
 });
+
 client.login(process.env.TOKEN);
