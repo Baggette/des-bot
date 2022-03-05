@@ -15,10 +15,13 @@ client.on('ready', () => {
     client.user.setPresence({ activities: [{ name: "Super Smash Flash" }], status: 'idle' });
 });
 
+
+
+
 client.on('messageCreate', (message) => {
     if(message.content.toLowerCase().startsWith(prefix)){
         let liberal =[
-            "yes",
+           "yes",
             "no",
             "why would you ask this",
             "blehhhh :nauseated_face: ",
@@ -34,7 +37,9 @@ client.on('messageCreate', (message) => {
             "hello fellow citizen",
             "let's play super smash flash",
             "Mitochondria are the powerhouses of the cell",
-            `I am currently in ${client.guilds.cache.size} servers`
+            `I am currently in ${client.guilds.cache.size} servers`,
+            "I am superior",
+            "Come back to me in 1000 years time"
         ]
         message.channel.send(`${liberal[Math.floor(Math.random() * liberal.length)]}`)
     }
