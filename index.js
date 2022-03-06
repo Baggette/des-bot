@@ -19,7 +19,7 @@ client.on('ready', () => {
 
 
 client.on('messageCreate', (message) => {
-    if(message.content.toLowerCase().startsWith(prefix)){
+    if(message.content.toLowerCase().includes(prefix)){
         let liberal =[
            "yes",
             "no",
