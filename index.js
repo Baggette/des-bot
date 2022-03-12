@@ -39,7 +39,11 @@ client.on('messageCreate', (message) => {
             "Mitochondria are the powerhouses of the cell",
             `I am currently in ${client.guilds.cache.size} servers`,
             "I am superior",
-            "Come back to me in 1000 years time"
+            "Come back to me in 1000 years time",
+	        "I am whiter than sour cream",
+	        "Nerdier than the extreme it’s desbot",
+            "You are the single dumbest person I’ve ever seen",
+            "I play bass"
         ]
         message.channel.send(`${liberal[Math.floor(Math.random() * liberal.length)]}`)
     }
