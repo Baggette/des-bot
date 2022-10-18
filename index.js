@@ -19,7 +19,7 @@ client.on('ready', () => {
 
 
 client.on('messageCreate', (message) => {
-    if(message.content.toLowerCase().includes(prefix)){
+    if(message.content.toLowerCase().startsWith(prefix) && !message.author.bot){
         let liberal =[
            "yes",
             "no",
